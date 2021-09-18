@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/htmlcssjsdomflexboxfont-awesomegrid-uIuPr6T8F)
 - Live Site URL: [live site](https://gigagiorgadze.github.io/time-tracking-dashboard-main/)
 
 ## My process
