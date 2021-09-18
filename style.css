@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0D1323;
+    font-family: 'Rubik', sans-serif;
+}
+/* parent of all divs */
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    grid-template-rows: 1fr 1fr;
+    width: 70vw;
+    margin: 20vh auto;
+    height: 60vh;
+    grid-gap: 20px;
+}
+/* the big div */
+.tall{
+    background-color: #1D204B;
+    grid-row: span 2;
+    border-radius: 20px;
+}
+/* all small cards */
+.card{
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+}
+.hours>span{
+    color: #B9BDED !important;
+}
+.tallTop{
+    background-color: #5746EA;
+    height: 65%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10%;
+}
+.tallTop img{
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.name h1{
+    margin: 0;
+    font-weight: 100;
+    color: white;
+}
+.name{
+    margin-top: 10%;
+    color: #AAA5FF;
+}
+.options{
+    color: #6265A6;
+    padding: 5% 10%;
+}
+.selected{
+    color: white;
+}
+.cardTop{
+    height: 20%;
+}
+.cardBot{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1D204B;
+    justify-content: center;
+    height: 80%;
+    padding: 0 10%;
+}
+.cardBotTop{
+    margin-bottom: 20%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.cardBot h1{
+    color: white;
+    margin: 0;
+    font-weight: 100;
+    font-size: 40px;
+}
+.work{
+    background-color: hsl(15, 100%, 70%);
+    background-image: url('./images/icon-work.svg');
+}
+.play{
+    background-color: hsl(195, 74%, 62%);
+    background-image: url('./images/icon-play.svg');
+}
+.study{
+    background-color: hsl(348, 100%, 68%);
+    background-image: url('./images/icon-study.svg');
+}
+.exercise{
+    background-color: hsl(145, 58%, 55%);
+    background-image: url('./images/icon-exercise.svg');
+}
+.social{
+    background-color: hsl(264, 64%, 52%);
+    background-image: url('./images/icon-social.svg');
+}
+.selfCare{
+    background-color: hsl(43, 84%, 65%);
+    background-image: url('./images/icon-self-care.svg');
+}
+@media screen and (max-width: 1000px) {
+    main{
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 650px) {
+        main{
+            width: 100vw;
+            grid-template-columns:1fr;
+            grid-template-rows: auto;
+            grid-auto-rows: 200px;
+        }
+        .tall{
+            grid-row: span 1;
+        }
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .tallTop{
+            display: flex;
+            align-items: center;
+        }
+        .name{
+            margin-top: 0;
+        }
+        .tallTop h1{
+            font-size: 20px;
+        }
+        .options{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+}
