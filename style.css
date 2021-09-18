@@ -105,6 +105,10 @@ main{
     background-color: hsl(43, 84%, 65%);
     background-image: url('./images/icon-self-care.svg');
 }
+.optionP:hover{
+    color: white;
+    font-weight: 900;
+}
 @media screen and (max-width: 1000px) {
     main{
         width: 90vw;
